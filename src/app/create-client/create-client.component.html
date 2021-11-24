@@ -1,0 +1,7 @@
+<form class="client-form" [formGroup]="form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Nombre</mat-label>
+    <input matInput placeholder="Juan" formControlName="name">
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="createClient()">Crear cliente</button>
+</form>
