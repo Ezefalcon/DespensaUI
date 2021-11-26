@@ -21,6 +21,10 @@ export abstract class AbstractCrudService<T> {
     return this.httpClient.get<T[]>(this.getUrl());
   }
 
+  findById(id: number) {
+    return this.httpClient.get(this.getUrl() + "/" + id);
+  }
+
   deleteById(id: any) {
     return this.httpClient.delete(this.getUrl() + "/" + id)
   }

@@ -28,12 +28,14 @@ export class CreateClientComponent implements OnInit {
 
   createClient() {
     let rawValue = this.form?.getRawValue();
-    this.clientService.save(rawValue).subscribe();
+    if(this.form.valid) {
+      this.clientService.save(rawValue).subscribe();
+    }
   }
 
   ngOnInit(): void {
     this.form = new FormGroup({
-      name: new FormControl('', [Validators.required]),
+      nombre: new FormControl('', [Validators.required]),
     });
   }
 }

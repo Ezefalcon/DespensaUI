@@ -1,5 +1,7 @@
 <mat-toolbar>
-  <span>Despensa</span>
+  <span>Despensa
+    <span *ngIf="currentClient">| Hola {{currentClient.nombre}}</span>
+  </span>
   <span class="example-spacer"></span>
   <div>
     <button mat-raised-button color="primary" class="mr-3" (click)="onCreateClient()">Agregar Cliente</button>

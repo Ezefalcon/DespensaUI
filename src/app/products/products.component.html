@@ -1,0 +1,13 @@
+<mat-card class="col-3 text-center m-2" *ngFor="let product of products">
+  <mat-card-title>{{product.nombre}}</mat-card-title>
+  <mat-card-content>
+    Precio: {{product.precio}}
+  </mat-card-content>
+  <mat-divider inset></mat-divider>
+  <mat-card-actions>
+    <button mat-button (click)="addProduct(product)">ADD</button>
+  </mat-card-actions>
+<!--  <mat-card-footer>-->
+<!--    <mat-progress-bar mode="indeterminate"></mat-progress-bar>-->
+<!--  </mat-card-footer>-->
+</mat-card>

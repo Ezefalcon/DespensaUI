@@ -10,12 +10,28 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatDialogModule } from "@angular/material/dialog";
 import { CreateClientComponent } from './create-client/create-client.component';
 import { HttpClientModule } from "@angular/common/http";
+import { ProductsComponent } from './products/products.component';
+import { MatCardModule } from "@angular/material/card";
+import { MatProgressBarModule } from "@angular/material/progress-bar";
+import { MatDividerModule } from "@angular/material/divider";
+import { MatSnackBarModule } from "@angular/material/snack-bar";
+import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatListModule } from "@angular/material/list";
+import { HomeComponent } from './home/home.component';
+import { AppRoutingModule } from "./app-routing.module";
+import { ReportClientComponent } from './report-client/report-client.component';
+import { SalesComponent } from './sales/sales.component';
+import { MatTableModule } from "@angular/material/table";
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CreateClientComponent,
+    ProductsComponent,
+    HomeComponent,
+    ReportClientComponent,
+    SalesComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,7 +42,15 @@ import { HttpClientModule } from "@angular/common/http";
     MatInputModule,
     MatButtonModule,
     MatDialogModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatProgressBarModule,
+    MatDividerModule,
+    MatSnackBarModule,
+    MatSidenavModule,
+    MatListModule,
+    AppRoutingModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

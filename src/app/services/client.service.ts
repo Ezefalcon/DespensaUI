@@ -7,6 +7,14 @@ import { Client } from "../shared/models/client";
 })
 export class ClientService extends AbstractCrudService<Client>{
 
+  client: Client | undefined;
   url: string = '/cliente';
 
+  getCurrentClient() {
+    return this.client;
+  }
+
+  setCurrentClient(client: Client) {
+    this.client = client;
+  }
 }
