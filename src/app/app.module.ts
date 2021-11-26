@@ -22,6 +22,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { ReportClientComponent } from './report-client/report-client.component';
 import { SalesComponent } from './sales/sales.component';
 import { MatTableModule } from "@angular/material/table";
+import { ClientsComponent } from './clients/clients.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { MatTableModule } from "@angular/material/table";
     HomeComponent,
     ReportClientComponent,
     SalesComponent,
+    ClientsComponent,
   ],
   imports: [
     BrowserModule,
